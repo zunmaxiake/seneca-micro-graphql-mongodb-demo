@@ -1,0 +1,34 @@
+{
+  "name": "seneca-micro-graphql-mongodb-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@graphql-tools/schema": "^7.0.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.4.0",
+    "mongoose": "^5.10.15",
+    "seneca": "^3.22.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/register": "^7.0.0"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node src/service.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zunmaxiake/seneca-micro-graphql-mongodb-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zunmaxiake/seneca-micro-graphql-mongodb-demo/issues"
+  },
+  "homepage": "https://github.com/zunmaxiake/seneca-micro-graphql-mongodb-demo#readme"
+}
