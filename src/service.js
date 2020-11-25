@@ -5,7 +5,7 @@ const config = require("./config/dev");
 const schema = require("./schema");
 import models from "./models"
 const seneca = require("seneca");
-import { createCompanies, createCategories } from './initDb'
+// import { createCompanies, createCategories } from './initDb'
 
 const app = express();
 
@@ -22,6 +22,8 @@ const serviceUrl = { port: 8030, type: 'tcp', pin: 'module:sourcing', timeout: 1
 
 mongoose.connect(config.db.url, { useNewUrlParser: true }, () => {
   console.log("mongodb has connected on port:27017");
+  // createCompanies(models);
+  // createCategories(models);
 });
 
 app.listen(3000);
